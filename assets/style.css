@@ -1,3 +1,42 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: rgb(168, 221, 252);
+}
+
+header {
+    background: linear-gradient(blue, navy);
+    width: 100%;
+
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.nav-button {
+    padding: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+
+}
+
+
+
+@media screen and (max-width 786px) {
+    .navbar {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width 992px) {
+    
+}
