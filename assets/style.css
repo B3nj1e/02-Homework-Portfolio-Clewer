@@ -13,6 +13,7 @@
 body {
     display: flex;
     flex-direction: column;
+    background-color: rgb(235, 235, 235);
 }
 
 header {
@@ -57,6 +58,7 @@ header {
     color: rgb(0, 162, 255);
 }
 
+/* defining parent container flex properties to align child/item text centrally, inserting background image */
 .mission-statement {
     display: flex;
     flex-direction: column;
@@ -74,13 +76,14 @@ header {
     flex-direction: row;
     justify-content: space-evenly;
     padding: 20px 0;
-    margin: 20px 0;
+    margin: 40px 0;
 }
 
 #about-me h2 {
     margin: 0 60px;
 }
 
+/* formating profile picture */
 #about-me img {
     display: flex;
     justify-content: flex-end;
@@ -88,6 +91,40 @@ header {
     height: auto;
     border-radius: 50%;
     margin: 0 20px;
+}
+
+/* defining parent container properties for display of work cards */
+.my-work {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#my-work h2 {
+    margin: 0 40px;
+    text-align: center;
+}
+
+/* defining flex properties within work card */
+.my-work-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 10px;
+    padding: 10px;
+    width: 400px;
+    height: auto;
+}
+
+/* making first work card larger than the rest */
+.my-work-card:first-child {
+    width: 90%;
+}
+
+.my-work-card:not(:first-child) {
+    flex: 1;
 }
 
 @media screen and (max-width 786px) {
