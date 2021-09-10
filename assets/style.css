@@ -8,7 +8,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: rgb(50, 50, 56);
 }
 
 body {
@@ -26,6 +25,7 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    background-color: rgb(50, 50, 56);
 }
 
 .navbar {
@@ -58,25 +58,27 @@ header {
 }
 
 .mission-statement {
-    height: 200px;
-    text-align: center;
-    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     line-height: 1.5;
-    color:rgb(241, 223, 128)
+    color:rgb(151, 0, 0);
+    background-image: url(./images/congruent_pentagon.png);
+    height: 250px;
 }
 
 #about-me {
-    text-align: center;
+    text-align: left;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     padding: 20px 0;
     margin: 20px 0;
-    color: white;
 }
 
 #about-me h2 {
-    margin: 0 20px;
+    margin: 0 60px;
 }
 
 #about-me img {
