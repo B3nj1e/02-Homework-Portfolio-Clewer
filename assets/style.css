@@ -1,5 +1,5 @@
 :root {
-    --dark: black;
+    --dark: rgb(50, 50, 56);
 }
 
 
@@ -26,7 +26,7 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    background-color: rgb(50, 50, 56);
+    background-color: var(--dark);
 }
 
 .navbar {
@@ -211,6 +211,18 @@ label {
   .flex-row input {
     margin-right: 2%;
   }
+
+footer {
+    background-color: var(--dark);
+    width: auto;
+}
+
+footer p {
+    text-align: center;
+    font-weight: 400;
+    color: white;
+    margin: 40px;
+}
 
 @media screen and (max-width 786px) {
     .navbar {
