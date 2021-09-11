@@ -133,7 +133,7 @@ header {
     flex-direction: column;
     align-items: center;
     width: auto;
-    background-color: rgb(153, 201, 255);
+    background-image: url(./images/congruent_pentagon.png);
 }
 
 #contact-me h2 {
@@ -158,17 +158,6 @@ label {
     background-color: #13293d;
     border-radius: 10px;
     cursor: pointer;
-  }
-  
-  /* The default appearance is removed and replaced with a custom image */
-  select {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-    background-image: url("../images/arrow.png");
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: contain;
   }
   
   .text-input {
