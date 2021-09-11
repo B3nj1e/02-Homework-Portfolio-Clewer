@@ -1,8 +1,10 @@
+/* establishing custom variables */
 :root {
     --dark: rgb(50, 50, 56);
+    --dark-purle: rgb(53, 0, 53);
 }
 
-
+/* setting styles for entire website */
 * {
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
@@ -10,12 +12,14 @@
     padding: 0;
 }
 
+/* setting formating for body content */
 body {
     display: flex;
     flex-direction: column;
     background-color: rgb(235, 235, 235);
 }
 
+/* styling header and establishing properties for navbar and website heading */
 header {
     display: flex;
     justify-content: space-between;
@@ -29,10 +33,12 @@ header {
     background-color: var(--dark);
 }
 
+/* setting navbar flex properties */
 .navbar {
     display: flex;
 }
 
+/* formating for nav button size/colors etc */
 .nav-button {
     padding: 40px;
     font-size: 20px;
@@ -41,6 +47,7 @@ header {
     color: white;
 }
 
+/* page title formating */
 .page-title {
     color: white;
     display: flex;
@@ -120,7 +127,7 @@ header {
 
 /* making first work card larger than the rest */
 .my-work-card:first-child {
-    width: 90%;
+    width: 100%;
 }
 
 .my-work-card:not(:first-child) {
@@ -153,9 +160,9 @@ label {
   }
   
   button {
-    padding: 1% 2%;
-    color: #fff;
-    background-color: #13293d;
+    padding: 2% 3%;
+    color: white;
+    background-color: #960000;
     border-radius: 10px;
     cursor: pointer;
   }
@@ -213,12 +220,61 @@ footer p {
     margin: 40px;
 }
 
-@media screen and (max-width 786px) {
-    .navbar {
-        flex-direction: column;
-    }
+@media screen and (max-width: 992px) {
+    
 }
 
-@media screen and (max-width 992px) {
-    
+/* when screen size 786px and less, the following styling is applied*/
+@media screen and (max-width: 786px) {
+    /* header and footer formating to purple and column display*/
+    header {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--dark-purle);
+    }
+
+    footer {
+        background-color: var(--dark-purle);
+    }
+    /* removing left margin on title, centering page title */
+    .page-title {
+        margin-left: 0;
+    }
+    /* navbar changed to column */
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+    /* nav button made smaller */
+    .nav-button {
+        padding:15px
+    }
+    /* changing about me from row to column flexbox display */
+    #about-me {
+        flex-direction: column;
+        padding: 0;
+        margin: 20px
+    }
+    /* centering and spacing about me title */
+    #about-me h2 {
+        text-align: center;
+        margin: 20px;
+    }
+    /* positiong profile pic */
+    #about-me img {
+        margin-top: 5%;
+        margin-left: 33%;
+        margin-right: 33%;
+        margin-bottom: 5%;
+    }
+    /* bringing contact me p away from media screen edge */
+    #contact-me p{
+        margin: 20px;
+    }
+    /* ensuring work cards that arent the first, stay smaller */
+    .my-work-card:not(:first-child) {
+        width: 45%;
+    }
 }
