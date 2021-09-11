@@ -74,14 +74,39 @@
                 <p></p>
                 <img src="./assets/images/placeholder.png" alt="place-holder"/>
             </div>
-            
-
-
+        
         </section>
 
         <div id="contact-me">
             <h2>Contact Me</h2>
-            <p>Insert contact form here with name, number, email, query</p>
+            <p>If you have any queries, please leave your name, email, number and query in the form below.</p>
+            
+            <form class="contact-form">
+                <p>
+                  <label for="username">Name:</label>
+                  <input class="text-input" id="username" type="text" placeholder="Contact name" />
+                </p>
+                <p>
+                  <label for="email">E-mail:</label>
+                  <input class="text-input" id="email" type="text" placeholder="me@example.com" />
+                </p>
+                <p>
+                    <label for="phone-number">Phone number:</label>
+                    <input class="text-input" id="phone-number" type="text" placeholder="phone number" />
+                  </p>
+                <p>
+                  <label for="query">Query:</label>
+                  <textarea class="text-input" id="query" placeholder="Please write your query here"></textarea>
+                </p>
+                <p class="flex-row">
+                  <input class="checkbox" id="agreement" type="checkbox" />
+                  <label for="agreement">I am prepared to achieve greatness!</label>
+                </p>
+                <p>
+                  <button>Submit</button>
+                </p>
+            </form>
+        
         </div>
 
 

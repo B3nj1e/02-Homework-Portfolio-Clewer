@@ -127,6 +127,91 @@ header {
     flex: 1;
 }
 
+#contact-me {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    background-color: rgb(153, 201, 255);
+}
+
+#contact-me h2 {
+    margin: 20px;
+}
+
+.contact-form {
+    max-width: 400px;
+  }
+  
+form p {
+    margin: 3% 0;
+  }
+  
+label {
+    display: block;
+  }
+  
+  button {
+    padding: 1% 2%;
+    color: #fff;
+    background-color: #13293d;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  /* The default appearance is removed and replaced with a custom image */
+  select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url("../images/arrow.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+  }
+  
+  .text-input {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .text-input, select {
+    padding: 1%;
+    outline: none;
+    border: 1.2px solid #b9C6ae;
+  }
+  
+  .text-input:hover, .checkbox:hover, 
+  select:hover, button:hover {
+    box-shadow: 0 0 5px #999;
+  }
+  
+  /* The right-side border changes when the element is clicked on or tabbed into */
+  .text-input:focus {
+    border-right-width: 5px;
+  }
+  
+  /* The border becomes dashed when the element's placeholder text is visible */
+  .text-input:placeholder-shown {
+    border-style: dashed;
+  }
+  
+  .flex-row {
+    display: flex;
+    align-items: center;
+  }
+  
+  .flex-row select {
+    flex: 1 0 0;
+    margin-left: 2%;
+  }
+  
+  .flex-row input {
+    margin-right: 2%;
+  }
+
 @media screen and (max-width 786px) {
     .navbar {
         flex-direction: column;
