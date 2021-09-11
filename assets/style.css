@@ -134,6 +134,25 @@ header {
     flex: 1;
 }
 
+/* setting opacity of project pics */
+.my-work img {
+    object-fit: cover;
+    opacity: 0.6;
+}
+/* transition properties for project images */
+.my-work img {
+    transition: all 0.3s ease 0s;
+}
+
+/* styling transition changes to project images when cursor hovers  */
+.my-work img:hover {
+    border-style: solid;
+    border-color: rgb(0, 162, 255);
+    border-width: 5px;
+    border-radius: 15px;
+    opacity: 1;
+}
+
 #contact-me {
     width: max-content;
     display: flex;
@@ -220,9 +239,6 @@ footer p {
     margin: 40px;
 }
 
-@media screen and (max-width: 992px) {
-    
-}
 
 /* when screen size 786px and less, the following styling is applied*/
 @media screen and (max-width: 786px) {
