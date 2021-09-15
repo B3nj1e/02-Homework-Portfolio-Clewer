@@ -98,7 +98,6 @@ header {
     justify-content: space-evenly;
     border-radius: 50%;
     margin: 0 3%;
-    
 }
 
 /* defining parent container properties for display of work cards */
@@ -134,7 +133,7 @@ header {
 
 /* making first work card larger than the rest */
 .my-work-card:first-child {
-    width: auto;
+    width: 75%;
 }
 
 .my-work-card:not(:first-child) {
