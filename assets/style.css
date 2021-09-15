@@ -2,6 +2,7 @@
 :root {
     --dark: rgb(50, 50, 56);
     --dark-purle: rgb(53, 0, 53);
+    --blue: rgb(0, 162, 255);
 }
 
 /* setting styles for entire website */
@@ -62,7 +63,7 @@ header {
 }
 
 .nav-button:hover {
-    color: rgb(0, 162, 255);
+    color: var(--blue);
 }
 
 /* defining parent container flex properties to align child/item text centrally, inserting background image */
@@ -71,6 +72,8 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
     line-height: 1.5;
     color:rgb(151, 0, 0);
     background-image: url(./images/congruent_pentagon.png);
@@ -82,22 +85,20 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 20px 0;
-    margin: 40px 0;
+    margin: 7% 0;
 }
 
 #about-me h2 {
-    margin: 0 60px;
+    margin: 0 6%;
 }
 
 /* formating profile picture */
 #about-me img {
     display: flex;
-    justify-content: flex-end;
-    width: 200px;
-    height: auto;
+    justify-content: space-evenly;
     border-radius: 50%;
-    margin: 0 20px;
+    margin: 0 3%;
+    
 }
 
 /* defining parent container properties for display of work cards */
@@ -119,19 +120,25 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin: 10px;
-    padding: 10px;
-    width: 400px;
+    margin: 3%;
+}
+
+.my-work-card p {
+    margin: 2%;
+}
+
+.my-work-card img {
+    width: 96%;
     height: auto;
 }
 
 /* making first work card larger than the rest */
 .my-work-card:first-child {
-    width: 100%;
+    width: auto;
 }
 
 .my-work-card:not(:first-child) {
-    flex: 1;
+    max-width: 44%;
 }
 
 /* setting opacity of project pics */
@@ -147,7 +154,7 @@ header {
 /* styling transition changes to project images when cursor hovers  */
 .my-work img:hover {
     border-style: solid;
-    border-color: rgb(0, 162, 255);
+    border-color: var(--blue);
     border-width: 5px;
     border-radius: 15px;
     opacity: 1;
@@ -291,6 +298,6 @@ footer p {
     }
     /* ensuring work cards that arent the first, stay smaller */
     .my-work-card:not(:first-child) {
-        width: 45%;
+        max-width: 66%;
     }
 }
