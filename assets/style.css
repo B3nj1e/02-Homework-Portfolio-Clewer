@@ -58,10 +58,12 @@ header {
     margin-left: 25px;
 }
 
+/* setting transition effects */
 .nav-button {
     transition: all 0.3s ease 0s;
 }
 
+/* setting text color to blue on cursor hover */
 .nav-button:hover {
     color: var(--blue);
 }
@@ -80,6 +82,7 @@ header {
     height: 250px;
 }
 
+/* defining about me parent container flex properties and spacing */
 #about-me {
     text-align: left;
     display: flex;
@@ -126,6 +129,7 @@ header {
     margin: 2%;
 }
 
+/* setting work card img width */
 .my-work-card img {
     width: 96%;
     height: auto;
@@ -133,9 +137,10 @@ header {
 
 /* making first work card larger than the rest */
 .my-work-card:first-child {
-    width: 75%;
+    width: 80%;
 }
 
+/* making work cards that arent the first, smaller */
 .my-work-card:not(:first-child) {
     max-width: 44%;
 }
@@ -159,6 +164,7 @@ header {
     opacity: 1;
 }
 
+/* defining contact me parent container flex properties */
 #contact-me {
     width: max-content;
     display: flex;
@@ -172,6 +178,7 @@ header {
     margin: 20px;
 }
 
+/* setting contact form */
 .contact-form {
     max-width: 400px;
   }
