@@ -143,6 +143,7 @@ header {
 /* making work cards that arent the first, smaller */
 .my-work-card:not(:first-child) {
     max-width: 44%;
+    max-height: 60%;
 }
 
 /* setting opacity of project pics */
