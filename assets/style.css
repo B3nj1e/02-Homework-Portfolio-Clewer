@@ -304,6 +304,10 @@ footer p {
     }
     /* ensuring work cards that arent the first, stay smaller */
     .my-work-card:not(:first-child) {
-        max-width: 66%;
+        max-width: 90%;
+    }
+
+    .my-work-card:first-child {
+        width: 90%;
     }
 }
