@@ -68,3 +68,5 @@ Screenshot 6 & 7:
 -website layout is generally responsive to media screen size change
 
 ```
+
+To access github repository please click [here](https://github.com/B3nj1e/02-Homework-Portfolio-Clewer). To access webpage please click [here](https://b3nj1e.github.io/02-Homework-Portfolio-Clewer/). 
