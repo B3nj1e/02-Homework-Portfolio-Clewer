@@ -5,7 +5,7 @@ Thank you for reviewing my project. I will display my work using screenshot and 
 ## Media Screen Width > 786px:
 
 
-![screenshot 1](./assets/images/screenshot1.png)
+![screenshot 1](./assets/images/screenshot1a.png)
 ```
 In screenshot 1:
 
@@ -21,14 +21,12 @@ Acceptance criteria met:
 -About me section includes some personal info, personal photo.
 ```
 
-![screenshot 2](./assets/images/screenshot2.png)
+![screenshot 2](./assets/images/screenshot2a.png)
 
-![screenshot 3](./assets/images/screenshot3.png)
-
-![screenshot 4](./assets/images/screenshot4.png)
+![screenshot 3](./assets/images/screenshot3a.png)
 
 ```
-In screenshot 2,3 & 4:
+In screenshot 2 & 3:
 
 Work section:
 -when cursor hovers, opacity is removed, blue border appears around work card
@@ -43,10 +41,10 @@ Acceptance criteria:
 
 ## Media Screen Width < 786px:
 
-![screenshot 5](./assets/images/screenshot5.png)
+![screenshot 4](./assets/images/screenshot5.png)
 
 ```
-Screenshot 5:
+Screenshot 4:
 -header color changes when media screen < 786px
 -nav bar changes from row to column
 -about me section changes from row to column
@@ -56,12 +54,12 @@ Acceptance criteria:
 
 ```
 
-![screenshot 6](./assets/images/screenshot6.png)
+![screenshot 5](./assets/images/screenshot6.png)
 
-![screenshot 7](./assets/images/screenshot8.png)
+![screenshot 6](./assets/images/screenshot8.png)
 
 ```
-Screenshot 6 & 7:
+Screenshot 5 & 6:
 -work cards automatically resize to screen width
 -word cards change from row to column
 -footer changes to same color as header
